@@ -10,8 +10,8 @@ class UserController < ApplicationController
     user.address_book_id = @address_book.id
     begin
       flash[:success] = "Successfully added #{user.first_name}." if user.save
-      # Sidekiq job to check use political party membership
-      flash[:error] = 'AddressBook entries limit exceeded' if user.errors
+      # Sidekiq job to check and persist political party membership
+      flash[:error] = user.errors.full_messages[0] if user.errors
     rescue StandardError => e
       flash[:error] = e.message
     end
