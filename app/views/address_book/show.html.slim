@@ -1,0 +1,10 @@
+h1
+  = @address_book.name
+
+= link_to 'Create new Address Book Entry', new_address_book_user_path(@address_book)
+- unless @address_book_entries.empty?
+  - @address_book_entries.each do |user|
+    ul
+      li
+        = user.first_name
+      = link_to 'delete', address_book_user_path(@address_book, user), method: :delete
