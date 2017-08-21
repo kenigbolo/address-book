@@ -1,5 +1,7 @@
-##Getting Started
+##Address Book
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/mdp/rotp/blob/master/LICENSE)
 
+##Getting Started
 + Clone the application with `git clone https://github.com/kenigbolo/address-book.git` or use ssh  `git clone git@github.com:kenigbolo/address-book.git`.
 
 ##Dependencies
