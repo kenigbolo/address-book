@@ -1,4 +1,3 @@
-##Address Book
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/mdp/rotp/blob/master/LICENSE)
 
 ##Getting Started
