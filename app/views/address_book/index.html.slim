@@ -1,0 +1,10 @@
+h1 AddressBook
+
+= link_to 'Create new Address Book', new_address_book_path
+
+- unless @address_books.empty?
+  - @address_books.each do |book|
+    ul
+      li
+        = book.name
+      = link_to "View Address Book", address_book_path(book)

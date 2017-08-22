@@ -1,0 +1,32 @@
+h1
+  = @address_book.name
+
+h3 Create a new User
+
+= simple_form_for :user, url: address_book_user_index_path(@address_book), method: :post do |f|
+  p
+    = f.label :first_name
+    br
+    = f.text_field :first_name
+
+  p
+    = f.label :last_name
+    br
+    = f.text_field :last_name
+
+  p
+    = f.label :email
+    br
+    = f.text_field :email
+
+  p
+    = f.label :phone_number
+    br
+    = f.text_field :phone_number
+
+  p
+    = f.label :id_code
+    br
+    = f.text_field :id_code
+  p
+    = f.submit

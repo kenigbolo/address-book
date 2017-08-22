@@ -1,0 +1,9 @@
+h1 Create a new AddressBook
+
+= simple_form_for :address_book, url: address_book_index_path, method: :post do |f|
+  p
+    = f.label :name
+    br
+    = f.text_field :name
+  p
+    = f.submit
