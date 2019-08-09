@@ -13,7 +13,7 @@ gem 'sqlite3'
 # Use pg for database
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 4.0'
+gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
